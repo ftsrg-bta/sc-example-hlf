@@ -21,13 +21,13 @@ TIP: Use https://learn.microsoft.com/en-us/windows/wsl/install[WSL] on Windows.
 == Running in Dev Mode
 
 .Use `nvm` to set the appropriate Node version
-[,console]
+[source,console]
 $ nvm use
 
 (Automatically reads `.nvmrc`)
 
 .Install dependencies
-[,console]
+[source,console]
 $ pnpm install
 --- or ---
 $ yarn install
@@ -35,7 +35,7 @@ $ yarn install
 $ npm install
 
 .Run the chaincode
-[,console]
+[source,console]
 $ pnpm start:watch
 --- or ---
 $ yarn start:watch

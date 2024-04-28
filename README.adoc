@@ -15,10 +15,8 @@ endif::[]
 
 TIP: Use https://learn.microsoft.com/en-us/windows/wsl/install[WSL] if working in Windows.
 
-[,console]
-----
+[source,console]
 $ ./fablo up
-----
 
 By default, the `kv-js` chaincode is installed in dev mode.
 
