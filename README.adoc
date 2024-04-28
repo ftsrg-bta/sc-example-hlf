@@ -1,0 +1,29 @@
+= Hyperledger Fabric Smart Contract Examples
+FTSRG
+v0.1.0, 2024-04-26
+:icons: font
+
+
+== Spin up the test network
+
+TIP: Use https://learn.microsoft.com/en-us/windows/wsl/install[WSL] if working in Windows.
+
+[,console]
+----
+$ ./fablo up
+----
+
+By default, the `kv-js` chaincode is installed in dev mode.
+
+
+== Configure the network
+
+Adjust `fablo-config.json` as desired.
+Especially, adjust the `chaincodes` value.
+
+
+== Available chaincode examples
+
+`kv-js`:: Minimal key-value store wrapper
+
+All chaincodes can be found under the `chaincodes/` directory.
