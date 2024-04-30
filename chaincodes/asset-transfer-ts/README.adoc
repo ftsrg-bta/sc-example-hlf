@@ -1,0 +1,45 @@
+= Simple Asset CRUD Chaincode (TypeScript)
+FTSRG
+v0.1.0, 2024-05-01
+:icons: font
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+
+== Prerequisites
+
+* https://github.com/nvm-sh/nvm[`nvm` (Node Version Manager)]
+
+TIP: Use https://learn.microsoft.com/en-us/windows/wsl/install[WSL] on Windows.
+
+
+== Running in Dev Mode
+
+.Use `nvm` to set the appropriate Node version
+[source,console]
+$ nvm use
+
+(Automatically reads `.nvmrc`)
+
+.Install dependencies
+[source,console]
+$ pnpm install
+--- or ---
+$ yarn install
+--- or ---
+$ npm install
+
+.Run the chaincode
+[source,console]
+$ pnpm start:watch
+--- or ---
+$ yarn start:watch
+--- or ---
+$ npm start:watch
+
+IMPORTANT: Ensure your network is up and running before attempting to run the chaincode in dev mode.

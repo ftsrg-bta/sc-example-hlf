@@ -29,6 +29,10 @@ Especially, adjust the `chaincodes` value.
 
 == Available chaincode examples
 
-`kv-js`:: Minimal key-value store wrapper
+`kv-js`:: Minimal key-value store wrapper (JavaScript)
+`asset-transfer-ts`:: Simple Asset CRUD chaincode (TypeScript)
+`asset-transfer-java`:: Simple Asset CRUD chaincode (Java) (currently no dev mode option)
+
+IMPORTANT: For `asset-transfer-java`, you must remove replace `fablo-config.json` with `fablo-config.java.json`.
 
 All chaincodes can be found under the `chaincodes/` directory.

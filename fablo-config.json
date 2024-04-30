@@ -55,6 +55,13 @@
       "lang": "node",
       "channel": "channel1",
       "directory": "./chaincodes/kv-js"
+    },
+    {
+      "name": "asset-transfer-ts",
+      "version": "0.1.0",
+      "lang": "node",
+      "channel": "channel1",
+      "directory": "./chaincodes/asset-transfer-ts"
     }
   ]
 }
