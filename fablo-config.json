@@ -1,5 +1,5 @@
 {
-  "$schema": "https://github.com/hyperledger-labs/fablo/releases/download/1.2.0/schema.json",
+  "$schema": "https://github.com/hyperledger-labs/fablo/releases/download/2.2.0/schema.json",
   "global": {
     "fabricVersion": "2.5.7",
     "tls": false,
@@ -12,8 +12,13 @@
   "orgs": [
     {
       "organization": {
-        "name": "Orderer",
-        "domain": "orderer.example.com"
+        "name": "Org1",
+        "domain": "org1.example.com",
+        "mspName": "Org1MSP"
+      },
+      "peer": {
+        "instances": 1,
+        "db": "LevelDb"
       },
       "orderers": [
         {
@@ -21,17 +26,7 @@
           "type": "solo",
           "instances": 1
         }
-      ]
-    },
-    {
-      "organization": {
-        "name": "Org1",
-        "domain": "org1.example.com"
-      },
-      "peer": {
-        "instances": 1,
-        "db": "LevelDb"
-      },
+      ],
       "tools": {
         "fabloRest": true
       }
@@ -45,7 +40,8 @@
           "name": "Org1",
           "peers": ["peer0"]
         }
-      ]
+      ],
+      "ordererGroup": "group1"
     }
   ],
   "chaincodes": [

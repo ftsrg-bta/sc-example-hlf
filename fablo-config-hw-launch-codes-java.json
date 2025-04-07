@@ -4,7 +4,7 @@
     "fabricVersion": "2.5.7",
     "tls": false,
     "engine": "docker",
-    "peerDevMode": true,
+    "peerDevMode": false,
     "tools": {
       "explorer": true
     }
@@ -46,11 +46,11 @@
   ],
   "chaincodes": [
     {
-      "name": "asset-transfer-java",
+      "name": "launch-codes",
       "version": "0.1.0",
       "lang": "java",
       "channel": "channel1",
-      "directory": "./chaincodes/asset-transfer-java"
+      "directory": "./chaincodes/hw-launch-codes-java"
     }
   ]
 }
